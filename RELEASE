@@ -1,0 +1,35 @@
+Release History:
+
+v1.0.4 2020-06-23
+
+    SpringError 模块添加 PanicImmediately 函数，增加错误码的默认值，优化 RPC
+    结果的显示；SpringLogger 模块添加 Print 和 Printf 函数，可适配更多 Logger
+    接口，线程安全的修改 Logger 的打印级别；实现更多辅助函数，增加 int 和 string
+    的 Contains 函数，增加获取函数所在文件及其行数的辅助函数，实现可以 Add 和 Wait
+    Goroutine 的 WaitGroup 封装类，比原生函数更安全的可检测 reflect.Value 是
+    否为 nil 的 IsNil 函数，添加 MD5 和 BASE64 的编码函数，增加 FindInList 函
+    数，性能更好的 LocalIPv4 函数，time.Time 和 time.Duration 转毫秒的辅助函数，
+    等等。
+
+v1.0.3 2020-04-15
+
+    为 Console 增加构造函数；添加 reflect.Type 的 Indirect 方法；添加 Map、
+    MapArray、Array 的 Diff 方法。
+
+v1.0.2 2020-03-21
+
+    修复 SpringError 模块的 BUG。
+
+v1.0.0 2020-02-22
+
+    Logger 模块支持 Panic 和 Trace 两种级别，支持对 Warn 和 Error 日志带颜色
+    输出；增加开放私有字段的反射函数。
+
+v1.0.0-rc 2020-01-04
+
+    初步实现 SpringError 模块；完善 SpringLogger 模块，增加默认 Logger 实现。
+
+v1.0.0-alpha 2019-10-27
+
+    初步实现 SpringLogger 模块；实现一些基础辅助函数，如 CopyBeanUseJson、
+    SafeCloseChan、(Error)ToString、ToJson、NewList、LocalIPv4 等。
